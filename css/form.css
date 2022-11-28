@@ -12,13 +12,14 @@ main{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 175vh;
+  height: 135vh;
 }
 
 .heading{
   color: white;
   text-align: center;
   padding-top: 40px;
+  margin-left: 5px;
   font-weight: bold;
 }
 .content{
@@ -26,6 +27,7 @@ main{
   height: 100vh;
   justify-content: center;
   align-items: center;
+  margin-left: 60px;
 }
 .left-content{
   width: 100%;
@@ -42,14 +44,14 @@ main{
   padding-left: 50px;
 }
 .top-input input{
-  width: 70%;
+  width: 65%;
   padding: 12px;
   border-radius: 6px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 .bottom-input label, input{
- margin-right: 12px;
+ margin-right: 5px;
  border-radius: 4px;
 }
 .bottom-input, input{
@@ -69,23 +71,53 @@ main{
 }
 #message{
   border-radius: 4px;
+  width: 67%;
 }
 #address{
-  width: 50%; 
+  width: 35%; 
 }
 #country{
-  width: 30%;
+  width: 65%;
+  padding: 8px 8px;
+  background: black;
+  border: 1px solid white;
+  color: white;
 }
 #submit{
   padding: 5px 10px;
   background: white;
   font-weight: bold;
+  background: black;
+  border: 1px solid white;
+  color: white;
+}
+#phone{
+  width: 37%;
+}
+#country:hover{
+  background: white;
+  color: black;
+  transition: .3s ease-in-out;
+}
+
+#submit:hover{
+  background: white;
+  color: black;
+  transition: .3s ease-in-out;
+}
+
+label{
+  font-size: 14px;
 }
 
 @media (min-width: 400px){
   #country{
-    width: 15%;
+    width: 32%;
   }
+  #city, #state{
+   width: 30%;
+  }
+
 }
 
 @media (min-width: 650px){
@@ -135,7 +167,7 @@ main{
 @media (min-width: 1024px){
   main{
     width: 98vw;
-    height: 135vh;
+    height: 175vh;
   }
 
   .heading{
